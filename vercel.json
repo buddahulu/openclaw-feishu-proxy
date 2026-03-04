@@ -1,5 +1,14 @@
 {
+  "rewrites": [
+    {
+      "source": "/feishu/webhook",
+      "destination": "http://139.196.137.255:18789/feishu/webhook"
+    }
+  ],
   "routes": [
-    { "src": "/feishu/webhook", "dest": "http://139.196.137.255:18789/feishu/webhook" }
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
   ]
 }
